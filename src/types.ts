@@ -10,4 +10,4 @@ export const DietPlanRequestSchema = z.object({
    objetivo: z.enum(["perda_de_peso", "hipertrofia", "manter_massa_muscular"]),
 });
 
-export type DietPlanRequestSchema = z.infer<typeof DietPlanRequestSchema>
+export type DietPlanRequest = z.infer<typeof DietPlanRequestSchema>
